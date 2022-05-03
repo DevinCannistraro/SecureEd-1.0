@@ -12,6 +12,7 @@ if (isset($_SESSION['email']) && !empty($_SESSION['email'])) //check that sessio
     }
 }
 
+
 else
 {
     http_response_code(403);
