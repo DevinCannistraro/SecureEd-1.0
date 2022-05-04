@@ -89,7 +89,7 @@ try {
     /*Update the database with the new info*/
 
     $results = false;
-    if(verify_name_input($fname && verify_name_input($lname) && verify_email_input($email))){
+    if(verify_name_input($fname) && verify_name_input($lname) && verify_email_input($email)){
         $query = "UPDATE User 
             SET Email = :email, AccType = :acctype, Password = :password, FName = :fname, LName = :lname, DOB = :dob, Year = :studentyear, Rank = :facultyrank, SQuestion = :squestion, SAnswer = :sanswer 
             WHERE Email = :prevemail";
